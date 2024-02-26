@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-26T11:07:56 IST" name="Suite" finished-at="2024-02-26T11:17:19 IST" duration-ms="563070">
+    <groups>
+      <group name="Regression">
+        <method signature="TC_01.checkDoctorDetials()[pri:2, instance:testCases.TC_01@4a883b15]" name="checkDoctorDetials" class="testCases.TC_01"/>
+        <method signature="TC_02.printSurgeries()[pri:4, instance:testCases.TC_02@229c6181]" name="printSurgeries" class="testCases.TC_02"/>
+        <method signature="TC_03.validateForm_Invalid_Detials()[pri:6, instance:testCases.TC_03@4686afc2]" name="validateForm_Invalid_Detials" class="testCases.TC_03"/>
+        <method signature="TC_04.validateForm_Valid_Detials()[pri:8, instance:testCases.TC_04@38cee291]" name="validateForm_Valid_Detials" class="testCases.TC_04"/>
+      </group> <!-- Regression -->
+      <group name="sanity">
+        <method signature="TC_01.checkUrl()[pri:1, instance:testCases.TC_01@4a883b15]" name="checkUrl" class="testCases.TC_01"/>
+        <method signature="TC_02.checkSurgiersPageOpened()[pri:3, instance:testCases.TC_02@229c6181]" name="checkSurgiersPageOpened" class="testCases.TC_02"/>
+        <method signature="TC_03.checkDemoPageOpened()[pri:5, instance:testCases.TC_03@4686afc2]" name="checkDemoPageOpened" class="testCases.TC_03"/>
+        <method signature="TC_04.checkDemoPageOpened()[pri:7, instance:testCases.TC_04@38cee291]" name="checkDemoPageOpened" class="testCases.TC_04"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-02-26T11:07:56 IST" name="Test" finished-at="2024-02-26T11:17:19 IST" duration-ms="563070">
+      <class name="testCases.TC_02">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_02@229c6181]" started-at="2024-02-26T11:12:49 IST" name="setup" finished-at="2024-02-26T11:13:30 IST" duration-ms="41153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkSurgiersPageOpened()[pri:3, instance:testCases.TC_02@229c6181]" started-at="2024-02-26T11:13:30 IST" name="checkSurgiersPageOpened" finished-at="2024-02-26T11:13:53 IST" duration-ms="22463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSurgiersPageOpened -->
+        <test-method signature="printSurgeries()[pri:4, instance:testCases.TC_02@229c6181]" started-at="2024-02-26T11:13:53 IST" name="printSurgeries" finished-at="2024-02-26T11:13:53 IST" depends-on-methods="testCases.TC_02.checkSurgiersPageOpened" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printSurgeries -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_02@229c6181]" started-at="2024-02-26T11:13:53 IST" name="tearDown" finished-at="2024-02-26T11:13:55 IST" duration-ms="1097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_02 -->
+      <class name="testCases.TC_01">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_01@4a883b15]" started-at="2024-02-26T11:07:57 IST" name="setup" finished-at="2024-02-26T11:08:42 IST" duration-ms="45080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkUrl()[pri:1, instance:testCases.TC_01@4a883b15]" started-at="2024-02-26T11:08:42 IST" name="checkUrl" finished-at="2024-02-26T11:08:42 IST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUrl -->
+        <test-method signature="checkDoctorDetials()[pri:2, instance:testCases.TC_01@4a883b15]" started-at="2024-02-26T11:08:42 IST" name="checkDoctorDetials" finished-at="2024-02-26T11:12:48 IST" depends-on-methods="testCases.TC_01.checkUrl" duration-ms="246137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDoctorDetials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_01@4a883b15]" started-at="2024-02-26T11:12:48 IST" name="tearDown" finished-at="2024-02-26T11:12:49 IST" duration-ms="1132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_01 -->
+      <class name="testCases.TC_04">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_04@38cee291]" started-at="2024-02-26T11:15:22 IST" name="setup" finished-at="2024-02-26T11:16:15 IST" duration-ms="52294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkDemoPageOpened()[pri:7, instance:testCases.TC_04@38cee291]" started-at="2024-02-26T11:16:15 IST" name="checkDemoPageOpened" finished-at="2024-02-26T11:17:07 IST" duration-ms="52277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDemoPageOpened -->
+        <test-method signature="validateForm_Valid_Detials()[pri:8, instance:testCases.TC_04@38cee291]" started-at="2024-02-26T11:17:07 IST" name="validateForm_Valid_Detials" finished-at="2024-02-26T11:17:18 IST" depends-on-methods="testCases.TC_04.checkDemoPageOpened" duration-ms="11272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateForm_Valid_Detials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_04@38cee291]" started-at="2024-02-26T11:17:18 IST" name="tearDown" finished-at="2024-02-26T11:17:19 IST" duration-ms="1140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_04 -->
+      <class name="testCases.TC_03">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_03@4686afc2]" started-at="2024-02-26T11:13:55 IST" name="setup" finished-at="2024-02-26T11:14:36 IST" duration-ms="41762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkDemoPageOpened()[pri:5, instance:testCases.TC_03@4686afc2]" started-at="2024-02-26T11:14:36 IST" name="checkDemoPageOpened" finished-at="2024-02-26T11:15:21 IST" duration-ms="44196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDemoPageOpened -->
+        <test-method signature="validateForm_Invalid_Detials()[pri:6, instance:testCases.TC_03@4686afc2]" started-at="2024-02-26T11:15:21 IST" name="validateForm_Invalid_Detials" finished-at="2024-02-26T11:15:21 IST" depends-on-methods="testCases.TC_03.checkDemoPageOpened" duration-ms="785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateForm_Invalid_Detials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_03@4686afc2]" started-at="2024-02-26T11:15:21 IST" name="tearDown" finished-at="2024-02-26T11:15:22 IST" duration-ms="1111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_03 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

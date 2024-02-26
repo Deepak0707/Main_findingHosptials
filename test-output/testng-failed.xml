@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="utilites.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.TC_01">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkDoctorDetials"/>
+          <include name="setup"/>
+          <include name="checkUrl"/>
+        </methods>
+      </class> <!-- testCases.TC_01 -->
+      <class name="testCases.TC_04">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validateForm_Valid_Detials"/>
+          <include name="setup"/>
+          <include name="checkDemoPageOpened"/>
+        </methods>
+      </class> <!-- testCases.TC_04 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
