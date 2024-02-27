@@ -5,7 +5,13 @@
 		<listener class-name="utilites.ExtentReportManager"></listener>
 	</listeners>
 	
-	<parameter name="browser" value="chrome"></parameter>
+	<parameters>
+		
+		<parameter name="os" value="windows"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		
+	</parameters>
+	
 	
   <test thread-count="5" name="Test">
 	  <groups>
