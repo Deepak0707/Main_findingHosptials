@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC_04" class="method navigator-link" hash-for-method="validateForm_Valid_Detials">validateForm_Valid_Detials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">11 methods,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -133,6 +119,16 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_01" class="method navigator-link" hash-for-method="checkLocations">checkLocations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_01" class="method navigator-link" hash-for-method="checkSpecialist">checkSpecialist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TC_02" class="method navigator-link" hash-for-method="checkSurgiersPageOpened">checkSurgiersPageOpened</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -143,12 +139,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_05" class="method navigator-link" hash-for-method="endToEnd">endToEnd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TC_02" class="method navigator-link" hash-for-method="printSurgeries">printSurgeries</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TC_03" class="method navigator-link" hash-for-method="validateForm_Invalid_Detials">validateForm_Invalid_Detials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_04" class="method navigator-link" hash-for-method="validateForm_Valid_Detials">validateForm_Valid_Detials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -163,48 +169,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.TC_04</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateForm_Valid_Detials">
-                  </a> <!-- validateForm_Valid_Detials -->
-                  <span class="method-name">validateForm_Valid_Detials</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[4]/div/div/div/div[1]&quot;}
-  (Session info: chrome=113.0.5672.93)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [af57dcabc8020ac48f9123d9e18e8ca1, findElement {using=xpath, value=/html/body/div[4]/div/div/div/div[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\2303973\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51170}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.10.11:4444/sess..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: af57dcabc8020ac48f9123d9e18e8ca1
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy49.getText(Unknown Source)
-	at PageObjects.healthWillnessForm.getMsg(healthWillnessForm.java:86)
-	at testCases.TC_04.validateForm_Valid_Detials(TC_04.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -216,6 +180,20 @@ Session ID: af57dcabc8020ac48f9123d9e18e8ca1
                   <a name="checkDoctorDetials">
                   </a> <!-- checkDoctorDetials -->
                   <span class="method-name">checkDoctorDetials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLocations">
+                  </a> <!-- checkLocations -->
+                  <span class="method-name">checkLocations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSpecialist">
+                  </a> <!-- checkSpecialist -->
+                  <span class="method-name">checkSpecialist</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -238,6 +216,13 @@ Session ID: af57dcabc8020ac48f9123d9e18e8ca1
                   <a name="checkDemoPageOpened">
                   </a> <!-- checkDemoPageOpened -->
                   <span class="method-name">checkDemoPageOpened</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateForm_Valid_Detials">
+                  </a> <!-- validateForm_Valid_Detials -->
+                  <span class="method-name">validateForm_Valid_Detials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -286,6 +271,21 @@ Session ID: af57dcabc8020ac48f9123d9e18e8ca1
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_05</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="endToEnd">
+                  </a> <!-- endToEnd -->
+                  <span class="method-name">endToEnd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -304,7 +304,7 @@ Session ID: af57dcabc8020ac48f9123d9e18e8ca1
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;sanity&quot;/&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
         &lt;include name=&quot;Regression&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
@@ -313,6 +313,7 @@ Session ID: af57dcabc8020ac48f9123d9e18e8ca1
       &lt;class name=&quot;testCases.TC_02&quot;/&gt;
       &lt;class name=&quot;testCases.TC_03&quot;/&gt;
       &lt;class name=&quot;testCases.TC_04&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_05&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -326,7 +327,7 @@ Session ID: af57dcabc8020ac48f9123d9e18e8ca1
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -357,10 +358,26 @@ Session ID: af57dcabc8020ac48f9123d9e18e8ca1
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
-              <span class="test-group-name">sanity</span>
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">endToEnd</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">checkDemoPageOpened</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkLocations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkSpecialist</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -369,6 +386,10 @@ Session ID: af57dcabc8020ac48f9123d9e18e8ca1
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">checkUrl</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">endToEnd</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -388,44 +409,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateForm_Valid_Detials')
-data.setCell(0, 2, 'testCases.TC_04')
-data.setCell(0, 3, 40866);
+data.setCell(0, 1, 'endToEnd')
+data.setCell(0, 2, 'testCases.TC_05')
+data.setCell(0, 3, 260125);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'checkDoctorDetials')
 data.setCell(1, 2, 'testCases.TC_01')
-data.setCell(1, 3, 21897);
+data.setCell(1, 3, 55029);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'checkDemoPageOpened')
 data.setCell(2, 2, 'testCases.TC_03')
-data.setCell(2, 3, 9274);
+data.setCell(2, 3, 43711);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkDemoPageOpened')
-data.setCell(3, 2, 'testCases.TC_04')
-data.setCell(3, 3, 8257);
+data.setCell(3, 1, 'checkLocations')
+data.setCell(3, 2, 'testCases.TC_01')
+data.setCell(3, 3, 39284);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'checkSurgiersPageOpened')
 data.setCell(4, 2, 'testCases.TC_02')
-data.setCell(4, 3, 2774);
+data.setCell(4, 3, 25893);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validateForm_Invalid_Detials')
-data.setCell(5, 2, 'testCases.TC_03')
-data.setCell(5, 3, 1071);
+data.setCell(5, 1, 'validateForm_Valid_Detials')
+data.setCell(5, 2, 'testCases.TC_04')
+data.setCell(5, 3, 17866);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'printSurgeries')
-data.setCell(6, 2, 'testCases.TC_02')
-data.setCell(6, 3, 679);
+data.setCell(6, 1, 'checkDemoPageOpened')
+data.setCell(6, 2, 'testCases.TC_04')
+data.setCell(6, 3, 15459);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'checkUrl')
-data.setCell(7, 2, 'testCases.TC_01')
-data.setCell(7, 3, 254);
+data.setCell(7, 1, 'validateForm_Invalid_Detials')
+data.setCell(7, 2, 'testCases.TC_03')
+data.setCell(7, 3, 2215);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'printSurgeries')
+data.setCell(8, 2, 'testCases.TC_02')
+data.setCell(8, 3, 1234);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkSpecialist')
+data.setCell(9, 2, 'testCases.TC_01')
+data.setCell(9, 3, 439);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkUrl')
+data.setCell(10, 2, 'testCases.TC_01')
+data.setCell(10, 3, 301);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -458,74 +491,95 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkUrl</span>
-                <span class="method-start">10529 ms</span>
+                <span class="method-start">17015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkLocations</span>
+                <span class="method-start">17325 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkSpecialist</span>
+                <span class="method-start">56612 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkDoctorDetials</span>
-                <span class="method-start">10792 ms</span>
+                <span class="method-start">57054 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">32691 ms</span>
+                <span class="method-start">112087 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_02</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(windows, chrome)</span>
-                <span class="method-start">34499 ms</span>
+                <span class="method-start">115164 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkSurgiersPageOpened</span>
-                <span class="method-start">46216 ms</span>
+                <span class="method-start">134134 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">printSurgeries</span>
-                <span class="method-start">48991 ms</span>
+                <span class="method-start">160029 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">49671 ms</span>
+                <span class="method-start">161265 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_03</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(windows, chrome)</span>
-                <span class="method-start">50913 ms</span>
+                <span class="method-start">163929 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkDemoPageOpened</span>
-                <span class="method-start">58665 ms</span>
+                <span class="method-start">178557 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateForm_Invalid_Detials</span>
-                <span class="method-start">67940 ms</span>
+                <span class="method-start">222270 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">69012 ms</span>
+                <span class="method-start">224486 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_04</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(windows, chrome)</span>
-                <span class="method-start">71098 ms</span>
+                <span class="method-start">227475 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkDemoPageOpened</span>
-                <span class="method-start">79674 ms</span>
+                <span class="method-start">274854 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">validateForm_Valid_Detials</span>
-                <span class="method-start">87932 ms</span>
+                <span class="method-start">290316 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">128803 ms</span>
+                <span class="method-start">308184 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_05</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(windows, chrome)</span>
+                <span class="method-start">311364 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">endToEnd</span>
+                <span class="method-start">358620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">618747 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

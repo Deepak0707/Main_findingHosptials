@@ -14,7 +14,7 @@ public class TC_04 extends Base{
 	public healthWillnessForm hf;
 	public specialistPage sp;
 	
-	@Test(priority=7,groups={"sanity"})
+	@Test(priority=7,groups={"smoke"})
 	void checkDemoPageOpened() throws InterruptedException, IOException {
 		sp=new specialistPage(driver);
 		hf=new healthWillnessForm(driver);
@@ -22,14 +22,14 @@ public class TC_04 extends Base{
 		String title=driver.getTitle();
 		Assert.assertEquals(title, getProperties().getProperty("demoTitle"));
 		captureScreen("DemoPage");
-		logger.info("****Starting Testcase Seven sanity testing****");
+	
 		logger.info("**Practo Url opended Successfully**");
 	}
 	
 	@Test(priority=8,groups={"Regression"},dependsOnMethods= {"checkDemoPageOpened"}) 
 	void validateForm_Valid_Detials() throws InterruptedException, IOException {
 		
-		logger.info("****Starting Testcase Eight entering valid detials in form****");
+		
 		
 		
 		scrollDown(hf.scroll);
@@ -42,7 +42,7 @@ public class TC_04 extends Base{
 	    }
 	    Assert.assertEquals(hf.getMsg(), getProperties().getProperty("msg"));
 	    captureScreen("thankyouMsg");
-	    logger.info("***TestCase three excuted successfully***");
+	    logger.info("thank you msg displayed");
 	   
 	}
 

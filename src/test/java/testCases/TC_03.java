@@ -16,7 +16,7 @@ public class TC_03 extends Base{
 	public specialistPage sp;
 	
 	
-	@Test(priority=5,groups={"sanity"})
+	@Test(priority=5,groups={"smoke"})
 	void checkDemoPageOpened() throws InterruptedException, IOException {
 		sp=new specialistPage(driver);
 		hf=new healthWillnessForm(driver);
@@ -24,7 +24,7 @@ public class TC_03 extends Base{
 		String title=driver.getTitle();
 		Assert.assertEquals(title, getProperties().getProperty("demoTitle"));
 		captureScreen("DemoPage");
-		logger.info("****Starting Testcase five sanity testing****");
+	
 		logger.info("**Demo form page opended Successfully**");
 	}
 	
@@ -33,7 +33,6 @@ public class TC_03 extends Base{
 	@Test(priority=6,groups={"Regression"},dependsOnMethods= {"checkDemoPageOpened"})
 	void validateForm_Invalid_Detials() throws InterruptedException, IOException {
 		
-		logger.info("****Starting Testcase Six entering invalid detials in form****");
 		
 		
 		scrollDown(hf.scroll);
@@ -41,7 +40,7 @@ public class TC_03 extends Base{
 	    boolean status=hf.submitButtonStatus();
 	    if(!status) {
 	    	logger.info("****submit button disabled****");
-	    	logger.info("***TestCase three excuted successfully***");
+	    	
 	    }
 	    captureScreen("invalidDetials");
 	   Assert.assertEquals(status, false);

@@ -33,7 +33,7 @@ public class Base {
 	public Properties p;
 	public static String targetFilePath;
 	public Logger logger;
-	@BeforeClass(groups= {"sanity","regression"})
+	@BeforeClass(groups= {"smoke","regression"})
 	@Parameters({"os","browser"})
 	  public void setup(String os,String br) throws IOException {
 		if(getProperties().getProperty("execution_env").equalsIgnoreCase("remote")) {
@@ -85,7 +85,7 @@ public class Base {
 		
 		
 		
-		@AfterClass(groups= {"sanity","regression"})
+		@AfterClass(groups= {"smoke","regression"})
 		public void tearDown() {
 	    	driver.quit();
 	    }
@@ -128,5 +128,8 @@ public class Base {
 		} 
 		
 	
-
+     public void refresh() {
+    	 driver.navigate().refresh();
+     }
+     
 }

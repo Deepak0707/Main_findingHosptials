@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +13,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import testBase.Base;
 
 public class Hooks {
@@ -34,6 +38,16 @@ public class Hooks {
 		driver.quit();
 	}
 	
+	@AfterStep
+	  public void addScreenshot(Scenario scenario) {
+	 
+	      if(!scenario.isFailed()) {
+	      	TakesScreenshot ts=(TakesScreenshot) driver;
+	      	byte[] screenshot=ts.getScreenshotAs(OutputType.BYTES);
+	      	scenario.attach(screenshot, "image/png",scenario.getName());
+	      }
+	  }
+	
 	public WebDriver browser(String br) {
 		
 		 WebDriver d=new ChromeDriver();
@@ -49,6 +63,9 @@ public class Hooks {
 		
 		return d;
 	}
+	
+	
+	
 	
 	public static WebDriver getDriver() {
 		return driver;

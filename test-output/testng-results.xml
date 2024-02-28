@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-27T12:01:35 IST" name="Suite" finished-at="2024-02-27T12:03:46 IST" duration-ms="131410">
+  <suite started-at="2024-02-28T15:27:59 IST" name="Suite" finished-at="2024-02-28T15:38:23 IST" duration-ms="623306">
     <groups>
+      <group name="regression">
+        <method signature="TC_05.endToEnd()[pri:0, instance:testCases.TC_05@6340e5f0]" name="endToEnd" class="testCases.TC_05"/>
+      </group> <!-- regression -->
       <group name="Regression">
-        <method signature="TC_01.checkDoctorDetials()[pri:2, instance:testCases.TC_01@7b36aa0c]" name="checkDoctorDetials" class="testCases.TC_01"/>
-        <method signature="TC_02.printSurgeries()[pri:4, instance:testCases.TC_02@1e0b4072]" name="printSurgeries" class="testCases.TC_02"/>
-        <method signature="TC_03.validateForm_Invalid_Detials()[pri:6, instance:testCases.TC_03@791f145a]" name="validateForm_Invalid_Detials" class="testCases.TC_03"/>
-        <method signature="TC_04.validateForm_Valid_Detials()[pri:8, instance:testCases.TC_04@f09733f]" name="validateForm_Valid_Detials" class="testCases.TC_04"/>
+        <method signature="TC_01.checkDoctorDetials()[pri:2, instance:testCases.TC_01@5677323c]" name="checkDoctorDetials" class="testCases.TC_01"/>
+        <method signature="TC_02.printSurgeries()[pri:4, instance:testCases.TC_02@4b45a2f5]" name="printSurgeries" class="testCases.TC_02"/>
+        <method signature="TC_03.validateForm_Invalid_Detials()[pri:6, instance:testCases.TC_03@41a0aa7d]" name="validateForm_Invalid_Detials" class="testCases.TC_03"/>
+        <method signature="TC_04.validateForm_Valid_Detials()[pri:8, instance:testCases.TC_04@2794eab6]" name="validateForm_Valid_Detials" class="testCases.TC_04"/>
       </group> <!-- Regression -->
-      <group name="sanity">
-        <method signature="TC_01.checkUrl()[pri:1, instance:testCases.TC_01@7b36aa0c]" name="checkUrl" class="testCases.TC_01"/>
-        <method signature="TC_02.checkSurgiersPageOpened()[pri:3, instance:testCases.TC_02@1e0b4072]" name="checkSurgiersPageOpened" class="testCases.TC_02"/>
-        <method signature="TC_03.checkDemoPageOpened()[pri:5, instance:testCases.TC_03@791f145a]" name="checkDemoPageOpened" class="testCases.TC_03"/>
-        <method signature="TC_04.checkDemoPageOpened()[pri:7, instance:testCases.TC_04@f09733f]" name="checkDemoPageOpened" class="testCases.TC_04"/>
-      </group> <!-- sanity -->
+      <group name="smoke">
+        <method signature="TC_01.checkUrl()[pri:1, instance:testCases.TC_01@5677323c]" name="checkUrl" class="testCases.TC_01"/>
+        <method signature="TC_01.checkLocations()[pri:0, instance:testCases.TC_01@5677323c]" name="checkLocations" class="testCases.TC_01"/>
+        <method signature="TC_01.checkSpecialist()[pri:0, instance:testCases.TC_01@5677323c]" name="checkSpecialist" class="testCases.TC_01"/>
+        <method signature="TC_02.checkSurgiersPageOpened()[pri:3, instance:testCases.TC_02@4b45a2f5]" name="checkSurgiersPageOpened" class="testCases.TC_02"/>
+        <method signature="TC_03.checkDemoPageOpened()[pri:5, instance:testCases.TC_03@41a0aa7d]" name="checkDemoPageOpened" class="testCases.TC_03"/>
+        <method signature="TC_04.checkDemoPageOpened()[pri:7, instance:testCases.TC_04@2794eab6]" name="checkDemoPageOpened" class="testCases.TC_04"/>
+        <method signature="TC_05.endToEnd()[pri:0, instance:testCases.TC_05@6340e5f0]" name="endToEnd" class="testCases.TC_05"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-02-27T12:01:35 IST" name="Test" finished-at="2024-02-27T12:03:46 IST" duration-ms="131410">
+    <test started-at="2024-02-28T15:27:59 IST" name="Test" finished-at="2024-02-28T15:38:23 IST" duration-ms="623306">
       <class name="testCases.TC_02">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_02@1e0b4072]" started-at="2024-02-27T12:02:10 IST" name="setup" finished-at="2024-02-27T12:02:22 IST" duration-ms="11717" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_02@4b45a2f5]" started-at="2024-02-28T15:29:55 IST" name="setup" finished-at="2024-02-28T15:30:14 IST" duration-ms="18969" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,21 +41,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkSurgiersPageOpened()[pri:3, instance:testCases.TC_02@1e0b4072]" started-at="2024-02-27T12:02:22 IST" name="checkSurgiersPageOpened" finished-at="2024-02-27T12:02:24 IST" duration-ms="2774" status="PASS">
+        <test-method signature="checkSurgiersPageOpened()[pri:3, instance:testCases.TC_02@4b45a2f5]" started-at="2024-02-28T15:30:14 IST" name="checkSurgiersPageOpened" finished-at="2024-02-28T15:30:40 IST" duration-ms="25893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSurgiersPageOpened -->
-        <test-method signature="printSurgeries()[pri:4, instance:testCases.TC_02@1e0b4072]" started-at="2024-02-27T12:02:24 IST" name="printSurgeries" finished-at="2024-02-27T12:02:25 IST" depends-on-methods="testCases.TC_02.checkSurgiersPageOpened" duration-ms="679" status="PASS">
+        <test-method signature="printSurgeries()[pri:4, instance:testCases.TC_02@4b45a2f5]" started-at="2024-02-28T15:30:40 IST" name="printSurgeries" finished-at="2024-02-28T15:30:41 IST" depends-on-methods="testCases.TC_02.checkSurgiersPageOpened" duration-ms="1234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printSurgeries -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_02@1e0b4072]" started-at="2024-02-27T12:02:25 IST" name="tearDown" finished-at="2024-02-27T12:02:26 IST" duration-ms="1242" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_02@4b45a2f5]" started-at="2024-02-28T15:30:41 IST" name="tearDown" finished-at="2024-02-28T15:30:44 IST" duration-ms="2663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_02 -->
       <class name="testCases.TC_01">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_01@7b36aa0c]" started-at="2024-02-27T12:01:35 IST" name="setup" finished-at="2024-02-27T12:01:46 IST" duration-ms="10524" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_01@5677323c]" started-at="2024-02-28T15:28:00 IST" name="setup" finished-at="2024-02-28T15:28:17 IST" duration-ms="17009" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,21 +71,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkUrl()[pri:1, instance:testCases.TC_01@7b36aa0c]" started-at="2024-02-27T12:01:46 IST" name="checkUrl" finished-at="2024-02-27T12:01:46 IST" duration-ms="254" status="PASS">
+        <test-method signature="checkUrl()[pri:1, instance:testCases.TC_01@5677323c]" started-at="2024-02-28T15:28:17 IST" name="checkUrl" finished-at="2024-02-28T15:28:17 IST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUrl -->
-        <test-method signature="checkDoctorDetials()[pri:2, instance:testCases.TC_01@7b36aa0c]" started-at="2024-02-27T12:01:46 IST" name="checkDoctorDetials" finished-at="2024-02-27T12:02:08 IST" depends-on-methods="testCases.TC_01.checkUrl" duration-ms="21897" status="PASS">
+        <test-method signature="checkLocations()[pri:0, instance:testCases.TC_01@5677323c]" started-at="2024-02-28T15:28:17 IST" name="checkLocations" finished-at="2024-02-28T15:28:56 IST" depends-on-methods="testCases.TC_01.checkUrl" duration-ms="39284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLocations -->
+        <test-method signature="checkSpecialist()[pri:0, instance:testCases.TC_01@5677323c]" started-at="2024-02-28T15:28:56 IST" name="checkSpecialist" finished-at="2024-02-28T15:28:57 IST" depends-on-methods="testCases.TC_01.checkUrl" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSpecialist -->
+        <test-method signature="checkDoctorDetials()[pri:2, instance:testCases.TC_01@5677323c]" started-at="2024-02-28T15:28:57 IST" name="checkDoctorDetials" finished-at="2024-02-28T15:29:52 IST" depends-on-methods="testCases.TC_01.checkLocations, testCases.TC_01.checkSpecialist" duration-ms="55029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDoctorDetials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_01@7b36aa0c]" started-at="2024-02-27T12:02:08 IST" name="tearDown" finished-at="2024-02-27T12:02:10 IST" duration-ms="1808" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_01@5677323c]" started-at="2024-02-28T15:29:52 IST" name="tearDown" finished-at="2024-02-28T15:29:55 IST" duration-ms="3077" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_01 -->
       <class name="testCases.TC_04">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_04@f09733f]" started-at="2024-02-27T12:02:46 IST" name="setup" finished-at="2024-02-27T12:02:55 IST" duration-ms="8576" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_04@2794eab6]" started-at="2024-02-28T15:31:47 IST" name="setup" finished-at="2024-02-28T15:32:35 IST" duration-ms="47379" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,94 +109,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkDemoPageOpened()[pri:7, instance:testCases.TC_04@f09733f]" started-at="2024-02-27T12:02:55 IST" name="checkDemoPageOpened" finished-at="2024-02-27T12:03:03 IST" duration-ms="8257" status="PASS">
+        <test-method signature="checkDemoPageOpened()[pri:7, instance:testCases.TC_04@2794eab6]" started-at="2024-02-28T15:32:35 IST" name="checkDemoPageOpened" finished-at="2024-02-28T15:32:50 IST" duration-ms="15459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDemoPageOpened -->
-        <test-method signature="validateForm_Valid_Detials()[pri:8, instance:testCases.TC_04@f09733f]" started-at="2024-02-27T12:03:03 IST" name="validateForm_Valid_Detials" finished-at="2024-02-27T12:03:44 IST" depends-on-methods="testCases.TC_04.checkDemoPageOpened" duration-ms="40866" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div/div/div[1]"}
-  (Session info: chrome=113.0.5672.93)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [af57dcabc8020ac48f9123d9e18e8ca1, findElement {using=xpath, value=/html/body/div[4]/div/div/div/div[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\2303973\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51170}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.10.11:4444/sess..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: af57dcabc8020ac48f9123d9e18e8ca1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div/div/div[1]"}
-  (Session info: chrome=113.0.5672.93)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [af57dcabc8020ac48f9123d9e18e8ca1, findElement {using=xpath, value=/html/body/div[4]/div/div/div/div[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\2303973\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51170}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.10.11:4444/sess..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: af57dcabc8020ac48f9123d9e18e8ca1
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy49.getText(Unknown Source)
-at PageObjects.healthWillnessForm.getMsg(healthWillnessForm.java:86)
-at testCases.TC_04.validateForm_Valid_Detials(TC_04.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="validateForm_Valid_Detials()[pri:8, instance:testCases.TC_04@2794eab6]" started-at="2024-02-28T15:32:50 IST" name="validateForm_Valid_Detials" finished-at="2024-02-28T15:33:08 IST" depends-on-methods="testCases.TC_04.checkDemoPageOpened" duration-ms="17866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateForm_Valid_Detials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_04@f09733f]" started-at="2024-02-27T12:03:44 IST" name="tearDown" finished-at="2024-02-27T12:03:46 IST" duration-ms="2325" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_04@2794eab6]" started-at="2024-02-28T15:33:08 IST" name="tearDown" finished-at="2024-02-28T15:33:11 IST" duration-ms="3180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_04 -->
       <class name="testCases.TC_03">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_03@791f145a]" started-at="2024-02-27T12:02:26 IST" name="setup" finished-at="2024-02-27T12:02:34 IST" duration-ms="7750" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_03@41a0aa7d]" started-at="2024-02-28T15:30:44 IST" name="setup" finished-at="2024-02-28T15:30:58 IST" duration-ms="14627" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -198,19 +139,45 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkDemoPageOpened()[pri:5, instance:testCases.TC_03@791f145a]" started-at="2024-02-27T12:02:34 IST" name="checkDemoPageOpened" finished-at="2024-02-27T12:02:43 IST" duration-ms="9274" status="PASS">
+        <test-method signature="checkDemoPageOpened()[pri:5, instance:testCases.TC_03@41a0aa7d]" started-at="2024-02-28T15:30:58 IST" name="checkDemoPageOpened" finished-at="2024-02-28T15:31:42 IST" duration-ms="43711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDemoPageOpened -->
-        <test-method signature="validateForm_Invalid_Detials()[pri:6, instance:testCases.TC_03@791f145a]" started-at="2024-02-27T12:02:43 IST" name="validateForm_Invalid_Detials" finished-at="2024-02-27T12:02:44 IST" depends-on-methods="testCases.TC_03.checkDemoPageOpened" duration-ms="1071" status="PASS">
+        <test-method signature="validateForm_Invalid_Detials()[pri:6, instance:testCases.TC_03@41a0aa7d]" started-at="2024-02-28T15:31:42 IST" name="validateForm_Invalid_Detials" finished-at="2024-02-28T15:31:44 IST" depends-on-methods="testCases.TC_03.checkDemoPageOpened" duration-ms="2215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateForm_Invalid_Detials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_03@791f145a]" started-at="2024-02-27T12:02:44 IST" name="tearDown" finished-at="2024-02-27T12:02:46 IST" duration-ms="2086" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_03@41a0aa7d]" started-at="2024-02-28T15:31:44 IST" name="tearDown" finished-at="2024-02-28T15:31:47 IST" duration-ms="2988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_03 -->
+      <class name="testCases.TC_05">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_05@6340e5f0]" started-at="2024-02-28T15:33:11 IST" name="setup" finished-at="2024-02-28T15:33:58 IST" duration-ms="47255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="endToEnd()[pri:0, instance:testCases.TC_05@6340e5f0]" started-at="2024-02-28T15:33:58 IST" name="endToEnd" finished-at="2024-02-28T15:38:19 IST" duration-ms="260125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToEnd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_05@6340e5f0]" started-at="2024-02-28T15:38:19 IST" name="tearDown" finished-at="2024-02-28T15:38:23 IST" duration-ms="4262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_05 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

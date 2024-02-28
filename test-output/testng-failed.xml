@@ -9,19 +9,18 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="sanity"/>
+        <include name="smoke"/>
         <include name="Regression"/>
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC_04">
+      <class name="testCases.TC_05">
         <methods>
           <include name="tearDown"/>
-          <include name="validateForm_Valid_Detials"/>
+          <include name="endToEnd"/>
           <include name="setup"/>
-          <include name="checkDemoPageOpened"/>
         </methods>
-      </class> <!-- testCases.TC_04 -->
+      </class> <!-- testCases.TC_05 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

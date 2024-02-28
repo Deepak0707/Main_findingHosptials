@@ -40,11 +40,11 @@ public	List<WebElement> experience;
     
 	//locating dropDownList Fees
 	
-	@FindBy(xpath="//*[@id=\"container\"]/div/div[3]/div/div/header/div[2]/div/div[2]/div/label/span")
+	@FindBy(xpath="//*[@id=\"container\"]/div/div[3]/div/div/header/div[2]/div/div[1]/div/label[1]/span/span")
 public	List<WebElement> feeDropdown;
 	
 	//locating dropDownList availability
-	@FindBy(xpath="//*[@id=\"container\"]/div/div[3]/div/div/header/div[2]/div/div[3]/div/label/span/span")
+	@FindBy(xpath="//*[@id=\"container\"]/div/div[3]/div/div/header/div[2]/div/div[2]/div/label/span")
 public	List<WebElement> availability;
 	
 	//locating dropDownList sortBy
@@ -63,7 +63,21 @@ public	WebElement forCorporatesIcon;
 	@FindBy(xpath="//*[@id=\"root\"]/div/div/div[1]/div[1]/div[2]/div/div[3]/div[1]/span/div/div[1]/a")
 public	WebElement healthandWellness;
 	
+	//locating selected location
+	@FindBy(xpath="//*[@id=\"container\"]/div/div[4]/div/div[1]/div/div[1]/div[1]/h1")
+	public WebElement selectedLocation;
 	
+	//locating selected specialist
+	@FindBy(xpath="//*[@id=\"container\"]/div/div[4]/div/div[1]/div/div[2]/div[1]/div[1]/div[2]/div[1]/div/div/div[1]/span")
+	public WebElement selectedSpecialist;
+	
+	public String getSelectedLocation() {
+		return selectedLocation.getText();
+	}
+	
+	public String getSelectedSpecialist() {
+		return selectedSpecialist.getText();
+	}
 	public void dropDownclick(WebElement dropDown) {
 		dropDown.click();
 	}
