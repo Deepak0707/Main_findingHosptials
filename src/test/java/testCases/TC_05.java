@@ -19,7 +19,7 @@ public class TC_05 extends Base {
 	public healthWillnessForm hf;
 	public SurgeriesPage spage;
 	
-	@Test (groups= {"smoke","regression"})
+	@Test (groups= {"smoke","Regression"})
 	public void endToEnd() throws IOException, InterruptedException {
 		p=new HomePage(driver);
 		sp=new specialistPage(driver);

@@ -37,8 +37,7 @@ public class Hooks {
 	public void tearDown() {
 		driver.quit();
 	}
-	
-	@AfterStep
+		@AfterStep
 	  public void addScreenshot(Scenario scenario) {
 	 
 	      if(!scenario.isFailed()) {
@@ -47,7 +46,7 @@ public class Hooks {
 	      	scenario.attach(screenshot, "image/png",scenario.getName());
 	      }
 	  }
-	
+
 	public WebDriver browser(String br) {
 		
 		 WebDriver d=new ChromeDriver();
